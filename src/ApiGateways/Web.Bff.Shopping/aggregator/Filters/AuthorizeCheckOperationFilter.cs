@@ -21,14 +21,13 @@
                 };
 
                 operation.Security = new List<OpenApiSecurityRequirement>
-            {
-                new()
                 {
-                    [ oAuthScheme ] = new[] { "Microsoft.eShopOnContainers.Web.Shopping.HttpAggregator" }
-                }
-            };
+                    new()
+                    {
+                        [ oAuthScheme ] = new[] { "Microsoft.eShopOnContainers.Web.Shopping.HttpAggregator" }
+                    }
+                };
             }
         }
     }
-
 }

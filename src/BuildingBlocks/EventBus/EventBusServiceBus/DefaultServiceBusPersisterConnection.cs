@@ -27,8 +27,7 @@ public class DefaultServiceBusPersisterConnection : IServiceBusPersisterConnecti
         }
     }
 
-    public ServiceBusAdministrationClient AdministrationClient => 
-        _subscriptionClient;
+    public ServiceBusAdministrationClient AdministrationClient => _subscriptionClient;
 
     public ServiceBusClient CreateModel()
     {
